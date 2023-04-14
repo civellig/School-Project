@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+</script>
+<script>
+  function handleEntertainment(){
+    let Title = document.getElementById("titleDescription");
+    let Description = document.getElementById("longtextDescription");
+    let Image = document.getElementById("image");
+    Title.innerText = "Entertainment"
+    Description.innerText = "Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay."
+    image.src = "beach.jpg"
+}
+function handleSightseeing(){
+    let Title = document.getElementById("titleDescription");
+    let Description = document.getElementById("longtextDescription");
+    let Image = document.getElementById("image");
+    Title.innerText = "Sightseeing"
+    Description.innerText = "Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano."
+    image.src = "sightseeing.jpg"
+}
+function handleRestaurants(){
+    let Title = document.getElementById("titleDescription");
+    let Description = document.getElementById("longtextDescription");
+    let Image = document.getElementById("image");
+    Title.innerText = "Restaurants"
+    Description.innerText = "Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine."
+    image.src = "restaurants.jpg"
+}
+function handleLodging(){
+    let Title = document.getElementById("titleDescription");
+    let Description = document.getElementById("longtextDescription");
+    let Image = document.getElementById("image");
+    Title.innerText = "Lodging"
+    Description.innerText = "Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government."
+    image.src = "lodging.jpg"
+}
+function handleTransportation(){
+    let Title = document.getElementById("titleDescription");
+    let Description = document.getElementById("longtextDescription");
+    let Image = document.getElementById("image");
+    Title.innerText = "Transportation"
+    Description.innerText = "Almost all visitors arrive to Taniti by air, though some arrive on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years. "
+    image.src = "transportation.jpg"
+}
+</script>
+<body>
+
+<header class="bg-white">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-1">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+        <!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt=""> -->
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About the Island</a>
+
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="lg:hidden" role="dialog" aria-modal="true">
+    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <div class="flex items-center justify-between">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        </a>
+        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          <div class="space-y-2 py-6">
+            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+
+            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+
+            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+            <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <div class="py-6">
+            <a href="#" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="flex justify-center">
+    <img src="island.jfif" alt="Girl in a jacket" class="w-[98%] h-[400px]">
+</div>
+
+<div class="pt-4 flex justify-center">
+    <button type="button" id="entertainment" onclick="handleEntertainment()" class="mx-8 rounded-md bg-blue-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Entertainment</button>
+    <button type="button" id="sightseeing" onclick="handleSightseeing()" class="mx-8 rounded-md bg-blue-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Sightseeing</button>
+    <button type="button" id="restaurants" onclick="handleRestaurants()" class="mx-8 rounded-md bg-blue-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Restaurants</button>
+    <button type="button" id="lodging" onclick="handleLodging()" class="mx-8 rounded-md bg-blue-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Lodging</button>
+    <button type="button" id="transportation" onclick="handleTransportation()" class="mx-8 rounded-md bg-blue-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Transportation</button>
+</div>
+
+<div class="bg-white pt-6">
+    <section aria-labelledby="features-heading" class="relative">
+      <div class="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:h-[85%] lg:w-[30%] lg:ml-44 lg:pr-4 xl:pr-16">
+        <img id="image" src="beach.jpg" alt="Black leather journal with silver steel disc binding resting on wooden shelf with machined steel pen." class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+      </div>
+  
+      <div class="mx-auto max-w-2xl px-4 pt-16 pb-24 sm:px-6 sm:pb-32 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:pt-32">
+        <div class="lg:col-start-2">
+          <p id="titleDescription" class="mt-4 text-4xl font-bold tracking-tight text-gray-900">Entertainment</p>
+          <p id="longtextDescription" class="mt-4 text-gray-500">Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:py-40 lg:px-8">
+      <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+        <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
+        <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">How are the power outlets in the Island?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Power outlets are 120 volts (the same as in the United States</p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">Can I buy alcohol at any time?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m. </p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">What is the driking age?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">What is the spoken language in the Island?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">Are there any hospitals?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">Is there any crime?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes. </p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">How are holidays in the Island?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
+            </dd>
+          </div>
+
+          <div class="pt-6">
+            <dt>
+              <!-- Expand/collapse question button -->
+              <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                <span class="text-base font-semibold leading-7">What is the currency used?</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <!--
+                    Icon when question is collapsed.
+  
+                    Item expanded: "hidden", Item collapsed: ""
+                  -->
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!--
+                    Icon when question is expanded.
+  
+                    Item expanded: "", Item collapsed: "hidden"
+                  -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd class="mt-2 pr-12" id="faq-0">
+              <p class="text-base leading-7 text-gray-600">Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+            </dd>
+          </div>
+
+
+          <!-- More questions... -->
+        </dl>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
